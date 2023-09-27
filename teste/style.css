@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+header{
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+.logo-container{
+    height: 100px;
+    width: 100px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    animation: gira 5s infinite linear;
+}
+.menu-container{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    gap: 40px
+}
+.item{
+    font-size: 1.8rem;
+    transition: transform .5s;
+    
+}
+.item:hover{
+    transform: scale(1.5);
+}
+@keyframes gira{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+main{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card{
+    height: 250px;
+    width: 200px;
+    background: rgb(45, 45, 128);
+    border-radius: 10px;
+}
+.text-container{
+    background: blue;
+    width: 620px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.text{
+    text-align: justify;
+}
+footer{
+    height: 100px;
+    background: yellow;
+}
